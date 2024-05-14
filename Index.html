@@ -20,49 +20,52 @@
 
         <div id="container">
 
-            <header>
-
-                <h1> Fatec Jahu </h1>
-
-                <nav>
-
-                    <a href=""> Home </a>
-                    <a href=""> Equipe </a>
-                    <a href=""> Contato </a>
-                    <a href=""> Salas </a>
-                    <a href=""> Agendamento </a>
-
-                </nav>
-
-                <button onclick="Menu_Options();"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
-
-            </header>
-
             <main>
 
                 <section id="cadastro">
 
+                    <form action="./Home.html" method="post">
 
+                        <h1> Cadastro </h1>
+
+                        <label for="nome_cadastro"> Nome: </label>
+                        <input type="text" name="nome_cadastro" id="nome_cadastro" placeholder="Insira seu nome aqui...">
+
+                        <label for="email_cadastro"> Email - Fatec: </label>
+                        <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Insira seu email institucional aqui...">
+
+                        <label for="senha_cadastro"> Senha: </label>
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Crie uma senha...">
+
+                        <button type="submit" class="botao_form"> Criar </button>
+
+                        <p onclick="Change_Form('login')"> Já possui um cadastro? Clique aqui. </p>
+
+                    </form>
 
                 </section>
 
-                <section id="Login">
+                <section id="login">
 
-                    
+                    <form action="./Home.html" method="post">
+
+                        <h1> Login </h1>
+
+                        <label for="email_login"> Email - Fatec: </label>
+                        <input type="email" name="email_login" id="email_login" placeholder="Insira seu email institucional aqui...">
+
+                        <label for="senha_login"> Senha: </label>
+                        <input type="password" name="senha_login" id="senha_login" placeholder="Insira sua senha aqui...">
+
+                        <button type="submit" class="botao_form"> Entrar </button>
+
+                        <p onclick="Change_Form('cadastro')"> Não possui um cadastro? Clique aqui. </p>
+
+                    </form>
 
                 </section>
 
             </main>
-
-            <div id="menu">
-
-                <a href=""> Home </a>
-                <a href=""> Equipe </a>
-                <a href=""> Contato </a>
-                <a href=""> Salas </a>
-                <a href=""> Agendamento </a>
-    
-            </div>
 
         </div>
         

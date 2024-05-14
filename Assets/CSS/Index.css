@@ -1,6 +1,145 @@
-/* Recursos: */
+/* Constantes: */
 
-@import url("../CSS/Global.css");
+:root {
+
+    --main-color: #CA0808;
+    --primary-neutral-color: #000000;
+    --secondary-neutral-color: #FFFFFF;
+
+}
 
 /* Estilos: */
 
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+
+#container {
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+#container main {
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+#container main section {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    transition: 1s;
+
+}
+
+#container main #cadastro {
+
+    transform: translateX(0%);
+
+}
+
+#container main #login {
+
+    transform: translateX(100%);
+
+}
+
+#container main section form {
+
+    height: 500px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+
+}
+
+#container main section form h1 {
+
+    font-size: 30px;
+    font-weight: bolder;
+    color: var(--main-color);
+    margin-bottom: 20px;
+
+}
+
+#container main section form label {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-neutral-color)
+
+}
+
+#container main section form input {
+
+    min-width: 80%;
+    outline: 1px solid var(--primary-neutral-color);
+    font-size: 20px;
+    color: var(--primary-neutral-color);
+    text-align: center;
+    padding: 5px;
+
+}
+
+#container main section form input:focus {
+
+    outline: 1px solid var(--main-color);
+
+}
+
+#container main section form .botao_form {
+
+    min-width: 80%;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--secondary-neutral-color);
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+
+}
+
+#container main section form p {
+
+    cursor: pointer;
+
+}
