@@ -1,0 +1,135 @@
+/* Constantes: */
+
+:root {
+
+    --main-color: #CA0808;
+    --primary-neutral-color: #000000;
+    --secondary-neutral-color: #FFFFFF;
+
+}
+
+/* Estilos: */
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+
+}
+
+#container {
+
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+#container header {
+
+    height: 75px;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    font-size: 20px;
+    color: var(--secondary-neutral-color);
+    padding: 0 20px 0 20px;
+    z-index: 2;
+
+}
+
+#container header nav {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+}
+
+#container header button {
+
+    display: none;
+    background-color: transparent;
+    border: none;
+    color: var(--secondary-neutral-color);
+    cursor: pointer;
+
+}
+
+#container main {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 75px 20px 20px 20px;
+    z-index: 1;
+
+}
+
+#menu {
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    background-color: var(--main-color);
+    font-size: 25px;
+    transform: translateY(100%);
+    transition: 1s;
+    z-index: 3;
+
+}
+
+#container header nav a, #menu a {
+
+    text-decoration: none;
+    color: var(--secondary-neutral-color);
+    cursor: pointer;
+
+}
+
+#container header nav a:hover, #menu a:hover {
+
+    color: var(--primary-neutral-color);
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 1024px) {
+
+    #container header nav {
+
+        display: none;
+
+    }
+
+    #container header button {
+
+        display: block;
+
+    }
+    
+}

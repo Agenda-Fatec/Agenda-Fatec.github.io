@@ -1,0 +1,82 @@
+/* Recursos: */
+
+@import url("../CSS/Global.css");
+
+/* Estilos: */
+
+main {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+main figure {
+
+    height: 300px;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+
+}
+
+main figure img {
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+main article {
+
+    font-size: 25px;
+    text-align: start;
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 1024px) {
+
+    main {
+
+        flex-direction: column;
+
+    }
+
+    main article {
+
+        text-align: center;
+
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    main article {
+
+        max-width: 50%;
+
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    main figure {
+
+        height: 200px;
+        width: 200px;
+    
+    }
+
+    main article {
+
+        font-size: 20px;
+
+    }
+    
+}
