@@ -65,13 +65,13 @@ body {
 
 #container main #cadastro {
 
-    transform: translateX(0%);
+    transform: translateX(-100%);
 
 }
 
 #container main #login {
 
-    transform: translateX(100%);
+    transform: translateX(0%);
 
 }
 

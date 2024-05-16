@@ -12,7 +12,7 @@
 
         <script defer type="text/javascript" src="./Assets/JS/Script.js">  </script>
 
-        <title> Cadastro / Login </title>
+        <title> Cadastro / Login - Agenda Fatec </title>
 
     </head>
 
@@ -24,18 +24,18 @@
 
                 <section id="cadastro">
 
-                    <form action="./Home.html" method="post">
+                    <form action="./Index.html" method="post">
 
                         <h1> Cadastro </h1>
 
                         <label for="nome_cadastro"> Nome: </label>
-                        <input type="text" name="nome_cadastro" id="nome_cadastro" placeholder="Insira seu nome aqui...">
+                        <input type="text" name="nome_cadastro" id="nome_cadastro" placeholder="Insira seu nome aqui..." required>
 
                         <label for="email_cadastro"> Email - Fatec: </label>
-                        <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Insira seu email institucional aqui...">
+                        <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Insira seu email institucional aqui..." required>
 
                         <label for="senha_cadastro"> Senha: </label>
-                        <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Crie uma senha...">
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Crie uma senha..." required>
 
                         <button type="submit" class="botao_form"> Criar </button>
 
@@ -52,10 +52,10 @@
                         <h1> Login </h1>
 
                         <label for="email_login"> Email - Fatec: </label>
-                        <input type="email" name="email_login" id="email_login" placeholder="Insira seu email institucional aqui...">
+                        <input type="email" name="email_login" id="email_login" placeholder="Insira seu email institucional aqui..." required>
 
                         <label for="senha_login"> Senha: </label>
-                        <input type="password" name="senha_login" id="senha_login" placeholder="Insira sua senha aqui...">
+                        <input type="password" name="senha_login" id="senha_login" placeholder="Insira sua senha aqui..." required>
 
                         <button type="submit" class="botao_form"> Entrar </button>
 
