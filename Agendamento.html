@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/Favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/Agendamento.css">
+
+    <script defer type="text/javascript" src="./Assets/JS/Script.js">  </script>
+
+    <title> Agendamento </title>
+
+</head>
+
+
+<body>
+
+    <div id="container">
+
+        <header>
+
+            <h1> Fatec Jahu </h1>
+
+            <nav>
+
+                <a href=""> Home </a>
+                <a href="./Sobre.html"> Equipe </a>
+                <a href=""> Contato </a>
+                <a href=""> Salas </a>
+                <a href=""> Agendamento </a>
+
+                <a href="./Index.html" style="font-weight: bold;"> Sair </a>
+
+            </nav>
+
+            <button onclick="Menu_Options();"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
+
+        </header>
+
+
+
+        <div id="menu">
+
+            <nav>
+
+                <a href=""> Home </a>
+                <a href=""> Equipe </a>
+                <a href=""> Contato </a>
+                <a href=""> Salas </a>
+                <a href=""> Agendamento </a>
+
+            </nav>
+
+            <a href="./Index.html"> Sair </a>
+
+        </div>
+        <main>
+
+            <!-- bloco -->
+            <div>
+                <div class="container-bloco-box">
+                    <div class="container-equip">
+                        <h4>BLOCO:</h4>
+                        <p>01</p>
+                    </div>
+                    <div class="container-bloco">
+                        <h4>SALA:</h4>
+                        <p>203</p>
+                </div>
+                <div class="container-bloco">
+                    <h4>NÚMERO:</h4>
+                    <p>11</p>
+
+                </div>
+            </div>
+            <!-- box data -->
+            <div>
+                <h4>EQUIPAMENTOS</h4>
+                <div class="container-equip-box">
+                    <div class="container-equip">
+                        <h4>Tipo:</h4>
+                        <p>Mouse</p>
+                    </div>
+                    <div class="container-equip">
+                        <h4>Quantidade:</h4>
+                        <p>01</p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- box data -->
+            <div>
+                <h4>DATA</h4>
+                <div class="container-data-box">
+                    <div class="container-data">
+                        <h4>Selecione o dia</h4>
+                        <input class="data" type="date">
+                    </div>
+                    <div class="container-data">
+                        <h4>Selecione o horário</h4>
+                        <select class="data" id="hora" name="hora">
+                            <option value="7am">07:00</option>
+                            <option value="8am">08:00</option>
+                            <option value="9am">09:00</option>
+                            <option value="10am">10:00</option>
+                            <option value="11am">11:00</option>
+                            <option value="12am">12:00</option>
+                            <option value="13am">13:00</option>
+                            <option value="14am">14:00</option>
+                            <option value="15am">15:00</option>
+                            <option value="16am">16:00</option>
+                            <option value="17am">17:00</option>
+                            <option value="18am">18:00</option>
+                            <option value="19am">19:00</option>
+                            <option value="20am">20:00</option>
+                            <option value="21am">21:00</option>
+                            <option value="22am">22:00</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="button">
+                <button>Agendar</button>
+                <button>Voltar</button>
+            </div>
+
+
+        </main>
+
+    </div>
+
+
+
+</body>
+
+</html>
