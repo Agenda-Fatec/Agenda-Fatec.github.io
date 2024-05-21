@@ -10,8 +10,6 @@
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;
     gap: 20px;
-    padding-top: 95px;
-    overflow: auto;
 
 }
 
@@ -47,7 +45,18 @@
 
 /* Responsividade: */
 
-@media (max-width: 780px) {
+@media (max-width: 1024px) {
+
+    #container main {
+
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+
+    }
+
+}
+
+@media (max-width: 767px) {
 
     #container main {
 
