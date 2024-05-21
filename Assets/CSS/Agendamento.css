@@ -14,6 +14,7 @@ main {
 }
 
 .container-data-box{
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,9 +25,11 @@ main {
     gap: 10px;
     box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
     margin: 5px 0px 25px 0;
+  
 }
 
 .container-data{
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -34,23 +37,27 @@ main {
     gap: 10px;
     text-transform: uppercase;
     padding: 10px;
+  
 }
 
 .data{
+  
     border: none;
     width: 130px;
     height: 35px;
     padding: 10px;
     text-transform: uppercase;
     text-align: center;
+  
 }
 
 /*box equipamentos*/
 
 .container-equip-box{
+  
     display: flex;
     flex-direction: row;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     align-items: flex-start;
     background-color: var(--secondary-neutral-color);
     height: 150px; 
@@ -59,9 +66,11 @@ main {
     gap: 10px;
     box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
     margin: 5px 0px 25px 0;
+  
 }
 
 .container-equip{
+  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -69,23 +78,27 @@ main {
     gap: 10px;
     text-transform: uppercase;
     padding: 10px;
+  
 }
 
 .equip{
+  
     border: none;
     width: 130px;
     height: 35px;
     padding: 10px;
     text-transform: uppercase;
     text-align: center;
+  
 }
 
 /*box bloco*/
 
 .container-bloco-box{
+  
     display: flex;
     flex-direction: row;
-   justify-content: space-evenly;
+    justify-content: space-evenly;
     align-items: flex-start;
     background-color: var(--secondary-neutral-color);
     width: 498px;
@@ -93,9 +106,11 @@ main {
     gap: 24px;
     box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
     margin: 5px 0px 25px 0;
+  
 }
 
 .container-bloco{
+  
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -103,42 +118,52 @@ main {
     gap: 10px;
     text-transform: uppercase;
     padding: 10px;
+  
 }
 
 .bloco{
+  
     border: none;
     width: 130px;
     height: 35px;
     padding: 10px;
     text-transform: uppercase;
     text-align: center;
+  
 }
 
 .button{
+  
     display: flex;
     justify-content: center;
     gap: 20px;
+  
 }
 
 button{
+  
     padding: 12px;
     width: 100px;
     font-weight: bold;  
     background-color: var(--main-color);
-    color: white;
+    color: var(--secondary-neutral-color);
     border: none;
     border-radius: 8px;
     box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
     cursor: pointer;
+  
 }
 
 button:hover{
+  
     opacity: .6;
 }
 
 .voltar{
+  
     background-color: #fff;
     color: var(--main-color);
+  
 }
 
 /* Responsividade: */
