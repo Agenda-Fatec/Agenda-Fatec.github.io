@@ -4,7 +4,7 @@
 
 /* Estilos: */
 
-main {
+#container main {
 
     display: flex;
     align-items: center;
@@ -12,7 +12,7 @@ main {
 
 }
 
-main figure {
+#container main figure {
 
     height: 300px;
     width: 300px;
@@ -21,7 +21,7 @@ main figure {
 
 }
 
-main figure img {
+#container main figure img {
 
     height: 100%;
     width: 100%;
@@ -29,7 +29,7 @@ main figure img {
 
 }
 
-main article {
+#container main article {
 
     font-size: 25px;
     text-align: start;
@@ -38,25 +38,9 @@ main article {
 
 /* Responsividade: */
 
-@media (max-width: 1024px) {
-
-    main {
-
-        flex-direction: column;
-
-    }
-
-    main article {
-
-        text-align: center;
-
-    }
-    
-}
-
 @media (min-width: 1024px) {
 
-    main article {
+    #container main article {
 
         max-width: 50%;
 
@@ -64,16 +48,32 @@ main article {
     
 }
 
+@media (max-width: 1024px) {
+
+    #container main {
+
+        flex-direction: column;
+
+    }
+
+    #container main article {
+
+        text-align: center;
+
+    }
+    
+}
+
 @media (max-width: 767px) {
 
-    main figure {
+    #container main figure {
 
         height: 200px;
         width: 200px;
     
     }
 
-    main article {
+    #container main article {
 
         font-size: 20px;
 

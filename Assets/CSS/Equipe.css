@@ -1,0 +1,81 @@
+/* Recursos: */
+
+@import url("../CSS/Global.css");
+
+/* Estilos: */
+
+#container main {
+
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: auto auto;
+    gap: 20px;
+
+}
+
+#container main .desenvolvedor {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+
+}
+
+#container main .desenvolvedor figure {
+
+    height: 250px;
+    width: 250px;
+    border: 2px solid var(--main-color);
+    border-radius: 50%;
+    box-shadow: 1px 2px 5px 1px var(--primary-neutral-color);
+    overflow: hidden;
+
+}
+
+#container main .desenvolvedor figure img {
+
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+/* Responsividade: */
+
+@media (max-width: 1024px) {
+
+    #container main {
+
+        grid-template-columns: auto auto;
+        grid-template-rows: repeat(3, auto);
+
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    #container main {
+
+        grid-template-columns: auto;
+        grid-template-rows: repeat(6, auto);
+
+    }
+
+    #container main .desenvolvedor figure {
+
+        width: 200px;
+        height: 200px;
+
+    }
+
+    #container main .desenvolvedor h2 {
+
+        font-size: 20px;
+
+    }
+
+}
