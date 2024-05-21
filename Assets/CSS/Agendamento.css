@@ -122,6 +122,10 @@ button{
 button:hover{
     opacity: .6;
 }
+.voltar{
+    background-color: #fff;
+    color: red;
+}
 
 
 main figure {
