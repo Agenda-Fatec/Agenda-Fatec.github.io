@@ -86,6 +86,12 @@
 
 @media (max-width: 767px) {
 
+    #container main {
+
+        flex-wrap: nowrap;
+    
+    }
+
     #container main figure {
 
         height: 200px;
