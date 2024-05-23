@@ -1,6 +1,18 @@
-function Show_Menu()
+function Control_Menu(estado)
 {
 
-    document.getElementById("menu").style.transform = "translateY(0%)";
+    if(!estado)
+    {
+
+        document.getElementById("menu").style.transform = "translateY(100%)";
+
+    }
+
+    else
+    {
+
+        document.getElementById("menu").style.transform = "translateY(0%)";
+
+    }
 
 }
