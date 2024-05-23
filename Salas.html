@@ -12,6 +12,7 @@
         <link rel="stylesheet" type="text/css" href="./Assets/CSS/Salas.css">
 
         <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
+        <script defer type="text/javascript" src="./Assets/JS/Salas.js">  </script>
 
         <title> Salas - Agenda Fatec </title>
 
@@ -30,19 +31,42 @@
                     <a href="./Home.html"> Home </a>
                     <a href="./Equipe.html"> Equipe </a>
                     <a target="_blank" href="https://fatecjahu.edu.br/contatos/"> Contato </a>
-                    <a href="./Salas.html"> Salas </a>
+                    <a href="#" onclick="Control_Menu(false);"> Salas </a>
 
                     <a href="./Index.html" style="font-weight: bold;"> Sair </a>
 
                 </nav>
 
-                <button onclick="Show_Menu();"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
+                <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
 
             </header>
 
             <main>
 
-                
+                <div id="pesquisa_sala">
+                    
+                    <label for="txt_pesquisa"> Pesquisar: </label>
+                    <input type="search" name="txt_pesquisa" id="txt_pesquisa" placeholder="Digite o nome da sala aqui...">
+
+                    <button> Buscar </button>
+
+                </div>
+
+                <select name="cbbox_bloco" id="cbbox_bloco">
+
+                    <option value="0"> Selecione um bloco... </option>
+                    <option value="0"> Bloco 01 </option>
+                    <option value="0"> Bloco 02 </option>
+                    <option value="0"> Bloco 03 </option>
+                    <option value="0"> N.I.C. </option>
+
+                </select>
+
+                <section id="salas">
+
+                    <!--  -->
+
+                </section>
 
             </main>
 
@@ -53,7 +77,7 @@
                     <a href="./Home.html"> Home </a>
                     <a href="./Equipe.html"> Equipe </a>
                     <a target="_blank" href="https://fatecjahu.edu.br/contatos/"> Contato </a>
-                    <a href="./Salas.html"> Salas </a>
+                    <a href="#" onclick="Control_Menu(false);"> Salas </a>
 
                 </nav>
 

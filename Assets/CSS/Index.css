@@ -47,6 +47,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow-x: hidden;
+    overflow-y: auto;
 
 }
 
@@ -84,6 +86,7 @@ body {
     align-items: center;
     justify-content: center;
     gap: 15px;
+    background-color: var(--secondary-neutral-color);
     border: 2px solid var(--main-color);
     border-radius: 15px;
 
@@ -114,16 +117,18 @@ body {
     color: var(--primary-neutral-color);
     text-align: center;
     padding: 5px;
+    cursor: pointer;
 
 }
 
 #container main section form input:focus {
 
     outline: 1px solid var(--main-color);
+    cursor: default;
 
 }
 
-#container main section form .botao_form {
+#container main section form button {
 
     min-width: 80%;
     background-color: var(--main-color);
