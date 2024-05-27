@@ -1,0 +1,11 @@
+Ideias a serem desenvolvidas:
+
+- Diminuir o tamanho dos placeholders;
+ 
+- Função recuperar senha;
+ 
+- Botão fechar menu;
+ 
+- Alterar o título da aba equipe e adicionar um contato de cada desenvolvedor do site;
+ 
+- Filtrar com base na disponibilidade de horário e equipamentos que a sala possui.
