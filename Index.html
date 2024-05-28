@@ -28,14 +28,17 @@
 
                         <h1> Cadastro </h1>
 
-                        <label for="nome_cadastro"> Nome: </label>
-                        <input type="text" name="nome_cadastro" id="nome_cadastro" placeholder="Insira seu nome aqui..." required>
+                        <label for="nome_cadastro"> Insira seu nome completo: </label>
+                        <input type="text" name="nome_cadastro" id="nome_cadastro" required>
 
-                        <label for="email_cadastro"> Email - Fatec: </label>
-                        <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Insira seu email institucional aqui..." required>
+                        <label for="ra_cadastro"> Insira seu RA: </label>
+                        <input type="number" name="ra_cadastro" id="ra_cadastro" required>
 
-                        <label for="senha_cadastro"> Senha: </label>
-                        <input type="password" name="senha_cadastro" id="senha_cadastro" placeholder="Crie uma senha..." required>
+                        <label for="email_cadastro"> Insira seu email escolar: </label>
+                        <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Email da Fatec" required>
+
+                        <label for="senha_cadastro"> Crie uma senha: </label>
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" required>
 
                         <button type="submit"> Criar </button>
 
@@ -51,15 +54,17 @@
 
                         <h1> Login </h1>
 
-                        <label for="email_login"> Email - Fatec: </label>
-                        <input type="email" name="email_login" id="email_login" placeholder="Insira seu email institucional aqui..." required>
+                        <label for="ra_login"> Insira seu RA: </label>
+                        <input type="number" name="ra_login" id="ra_login" required>
 
-                        <label for="senha_login"> Senha: </label>
-                        <input type="password" name="senha_login" id="senha_login" placeholder="Insira sua senha aqui..." required>
+                        <label for="senha_login"> Insira sua senha: </label>
+                        <input type="password" name="senha_login" id="senha_login" required>
 
                         <button type="submit"> Entrar </button>
 
                         <p onclick="Change_Form('cadastro')"> Não possui um cadastro? Clique aqui. </p>
+
+                        <p id="btn_recuperar_senha"> Esqueceu sua senha? Clique aqui. </p>
 
                     </form>
 
