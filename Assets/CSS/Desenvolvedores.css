@@ -1,11 +1,28 @@
 /* Recursos: */
 
-@import url("../CSS/Global.css");
+@import url("./Global.css");
 
 /* Estilos: */
 
-.grid-desenvolvedores {
+#container main {
 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+
+}
+
+#container main h1 {
+
+    text-align: center;
+
+}
+
+#container main #desenvolvedores {
+
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;
@@ -13,17 +30,7 @@
 
 }
 
-.git-link{
-  
-    font-size: smaller;
-    font-weight: 600;
-    text-decoration: none;
-    color: var(--primary-neutral-color);
-    margin-top: -15px;
-  
-}
-
-#container main .desenvolvedor {
+#container main #desenvolvedores .desenvolvedor {
 
     display: flex;
     flex-direction: column;
@@ -34,16 +41,7 @@
 
 }
 
-.titulo-desenvolvedores{
-  
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 30px;
-  
-}
-
-#container main .desenvolvedor figure {
+#container main #desenvolvedores .desenvolvedor figure {
 
     height: 250px;
     width: 250px;
@@ -54,7 +52,7 @@
 
 }
 
-#container main .desenvolvedor figure img {
+#container main #desenvolvedores .desenvolvedor figure img {
 
     height: 100%;
     width: 100%;
@@ -62,11 +60,25 @@
 
 }
 
+#container main #desenvolvedores .desenvolvedor a {
+
+    color: var(--primary-neutral-color);
+    text-decoration: none;
+    transition: 0.5s;
+
+}
+
+#container main #desenvolvedores .desenvolvedor a:hover {
+
+    color: var(--main-color);
+
+}
+
 /* Responsividade: */
 
 @media (max-width: 1024px) {
 
-    #container main {
+    #container main #desenvolvedores {
 
         grid-template-columns: auto auto;
         grid-template-rows: repeat(3, auto);
@@ -77,21 +89,21 @@
 
 @media (max-width: 767px) {
 
-    #container main {
+    #container main #desenvolvedores {
 
         grid-template-columns: auto;
         grid-template-rows: repeat(6, auto);
 
     }
 
-    #container main .desenvolvedor figure {
+    #container main #desenvolvedores .desenvolvedor figure {
 
         width: 200px;
         height: 200px;
 
     }
 
-    #container main .desenvolvedor h2 {
+    #container main #desenvolvedores .desenvolvedor h2 {
 
         font-size: 20px;
 
