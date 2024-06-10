@@ -2,7 +2,7 @@
 
 :root {
 
-    --main-color: #CA0808;
+    --main-color: #B20000;
     --primary-neutral-color: #000000;
     --secondary-neutral-color: #FFFFFF;
 
@@ -95,13 +95,14 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    gap: 75px;
     background-color: var(--main-color);
     font-size: 25px;
-    transform: translateY(100%);
     padding: 50px 15px 50px 15px;
-    transition: 1s;
     overflow-x: hidden;
     overflow-y: auto;
+    transition: 1s;
+    transform: translateY(100%);
     z-index: 3;
 
 }
@@ -122,7 +123,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 50px;
+    gap: 30px;
 
 }
 
