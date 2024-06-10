@@ -4,13 +4,23 @@
 
 /* Estilos: */
 
-#container main {
+.grid-desenvolvedores {
 
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto auto;
     gap: 20px;
 
+}
+
+.git-link{
+  
+    font-size: smaller;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--primary-neutral-color);
+    margin-top: -15px;
+  
 }
 
 #container main .desenvolvedor {
@@ -22,6 +32,15 @@
     gap: 20px;
     text-align: center;
 
+}
+
+.titulo-desenvolvedores{
+  
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  
 }
 
 #container main .desenvolvedor figure {
