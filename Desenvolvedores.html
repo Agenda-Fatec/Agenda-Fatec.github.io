@@ -12,7 +12,7 @@
 
         <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
 
-        <title> Equipe - Agenda Fatec </title>
+        <title> Desenvolvedores - Agenda Fatec </title>
 
     </head>
 
@@ -27,7 +27,7 @@
                 <nav>
 
                     <a href="./Home.html"> Home </a>
-                    <a href="./Equipe.html"> Equipe </a>
+                    <a href="#" onclick="Control_Menu(false);"> Desenvolvedores </a>
                     <a target="_blank" href="https://fatecjahu.edu.br/contatos/"> Contato </a>
                     <a href="./Salas.html"> Salas </a>
 
@@ -35,11 +35,12 @@
 
                 </nav>
 
-                <button onclick="Show_Menu();"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
+                <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
 
             </header>
 
             <main>
+              
                 <h2 class="titulo-desenvolvedores">Desenvolvedores deste projeto</h2>
 
                 <div class="grid-desenvolvedores">
@@ -96,16 +97,19 @@
                         <a class="git-link" href="https://github.com">https://github.com</a>
     
                     </div>
+
                 </div>
 
             </main>
 
             <div id="menu">
 
+                <button onclick="Control_Menu(false);"> <img src="./Assets/Images/Fechar.png" alt="Fechar"> </button>
+
                 <nav>
 
                     <a href="./Home.html"> Home </a>
-                    <a href="./Equipe.html"> Equipe </a>
+                    <a href="#" onclick="Control_Menu(false);"> Desenvolvedores </a>
                     <a target="_blank" href="https://fatecjahu.edu.br/contatos/"> Contato </a>
                     <a href="./Salas.html"> Salas </a>
 

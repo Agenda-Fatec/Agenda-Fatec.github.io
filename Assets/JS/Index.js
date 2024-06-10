@@ -1,4 +1,4 @@
-var nome, email, senha = "";
+var nome, ra, email, senha = "";
 
 var vezes_login = 0;
 
@@ -32,6 +32,8 @@ document.getElementById("form_cadastro").addEventListener("submit", event => {
 
     nome = document.getElementById("nome_cadastro").value;
 
+    ra = document.getElementById("ra_cadastro").value;
+
     email = document.getElementById("email_cadastro").value;
 
     senha = document.getElementById("senha_cadastro").value;
@@ -42,7 +44,7 @@ document.getElementById("form_cadastro").addEventListener("submit", event => {
 
     Change_Form("login");
 
-})
+});
 
 document.getElementById("form_login").addEventListener("submit", event => {
 
@@ -57,7 +59,7 @@ document.getElementById("form_login").addEventListener("submit", event => {
 
     }
 
-    else if(document.getElementById("email_login").value != email || document.getElementById("senha_login").value != senha)
+    else if(document.getElementById("ra_login").value != ra || document.getElementById("senha_login").value != senha)
     {
 
         alert("Dados incorretos! Tente novamente.");
@@ -75,4 +77,22 @@ document.getElementById("form_login").addEventListener("submit", event => {
 
     }
 
-})
+});
+
+document.getElementById("btn_recuperar_senha").addEventListener("click", () => {
+
+    if(senha == "")
+    {
+
+        alert("Você ainda não possui um cadastro.");
+
+    }
+
+    else
+    {
+
+        alert("Seu senha é: " + senha);
+
+    }
+
+});

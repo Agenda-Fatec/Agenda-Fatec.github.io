@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 
 }
 
@@ -32,7 +34,19 @@
 #container main article {
 
     font-size: 25px;
+    line-height: 45px;
     text-align: start;
+
+}
+
+#container main #mapa {
+
+    height: 40%;
+    width: 85%;
+    display: block;
+    border: 2px solid var(--primary-neutral-color);
+    border-radius: 15px;
+    overflow: hidden;
 
 }
 
@@ -61,15 +75,29 @@
         text-align: center;
 
     }
+
+    #container main #mapa {
+
+        display: none;
+
+    }
     
 }
 
 @media (max-width: 767px) {
 
+    #container main {
+
+        flex-wrap: nowrap;
+    
+    }
+
     #container main figure {
 
         height: 200px;
         width: 200px;
+        min-height: 200px;
+        min-width: 200px;
     
     }
 
