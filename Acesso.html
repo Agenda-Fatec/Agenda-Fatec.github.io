@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="image/x-icon" href="./Assets/Images/Favicon.png">
+
+        <link rel="stylesheet" type="text/css" href="./Assets/CSS/Acesso.css">
+
+        <script defer type="text/javascript" src="./Assets/JS/Acesso.js">  </script>
+
+        <title> Acesso - Agenda Fatec </title>
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <main>
+
+                <section id="cadastro">
+
+                    <form id="form_cadastro" action="./Acesso.html" method="get">
+
+                        <h1> Cadastro </h1>
+
+                        <label for="nome_cadastro"> Insira seu nome completo: </label>
+                        <input type="text" name="nome_cadastro" id="nome_cadastro" value="Teste" required>
+
+                        <label for="ra_cadastro"> Insira seu RA: </label>
+                        <input type="number" name="ra_cadastro" id="ra_cadastro" value="0202" required>
+
+                        <label for="email_cadastro"> Insira seu email escolar: </label>
+                        <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Email da Fatec" value="teste@fatec" required>
+
+                        <label for="senha_cadastro"> Crie uma senha: </label>
+                        <input type="password" name="senha_cadastro" id="senha_cadastro" value="1234" required>
+
+                        <button type="submit"> Criar </button>
+
+                        <p onclick="Change_Form('login')"> Já possui um cadastro? Clique aqui. </p>
+
+                    </form>
+
+                </section>
+
+                <section id="login">
+
+                    <form id="form_login" action="./Index.html" method="get">
+
+                        <h1> Login </h1>
+
+                        <label for="ra_login"> Insira seu RA: </label>
+                        <input type="number" name="ra_login" id="ra_login" required>
+
+                        <label for="senha_login"> Insira sua senha: </label>
+                        <input type="password" name="senha_login" id="senha_login" required>
+
+                        <button type="submit"> Entrar </button>
+
+                        <p onclick="Change_Form('cadastro')"> Não possui um cadastro? Clique aqui. </p>
+
+                        <p id="btn_recuperar_senha"> Esqueceu sua senha? Clique aqui. </p>
+
+                    </form>
+
+                </section>
+
+            </main>
+
+        </div>
+        
+    </body>
+
+</html>
