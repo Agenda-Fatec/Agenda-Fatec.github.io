@@ -135,6 +135,7 @@ body {
 
 #container main section form input:focus {
 
+    border: none;
     outline: 1px solid var(--main-color);
     cursor: default;
 

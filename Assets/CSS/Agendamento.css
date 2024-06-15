@@ -4,166 +4,36 @@
 
 /* Estilos: */
 
-main {
+#container main {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 20px;
+
+}
+
+#container main #equipamentos_sala {
+
+    grid-column: 1 / span 2;
+
+}
+
+#container main #dados_sala {
 
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
-
-}
-
-.container-data-box{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-neutral-color);
-    width: 498px; 
-    border-radius: 10px;
-    gap: 10px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
-    margin: 5px 0px 25px 0;
-  
-}
-
-.container-data{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-    padding: 10px;
-  
-}
-
-.data{
-  
-    border: none;
-    width: 130px;
-    height: 35px;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-  
-}
-
-/*box equipamentos*/
-
-.container-equip-box{
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    background-color: var(--secondary-neutral-color);
-    height: 150px; 
-    width: 498px;
-    border-radius: 10px;
-    gap: 10px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
-    margin: 5px 0px 25px 0;
-  
-}
-
-.container-equip{
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-    padding: 10px;
-  
-}
-
-.equip{
-  
-    border: none;
-    width: 130px;
-    height: 35px;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-  
-}
-
-/*box bloco*/
-
-.container-bloco-box{
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    background-color: var(--secondary-neutral-color);
-    width: 498px;
-    border-radius: 10px;
-    gap: 24px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
-    margin: 5px 0px 25px 0;
-  
-}
-
-.container-bloco{
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-    padding: 10px;
-  
-}
-
-.bloco{
-  
-    border: none;
-    width: 130px;
-    height: 35px;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-  
-}
-
-.button{
-  
-    display: flex;
     justify-content: center;
     gap: 20px;
-  
+
 }
 
-button{
-  
-    padding: 12px;
-    width: 100px;
-    font-weight: bold;  
-    background-color: var(--main-color);
+#container main #dados_sala span {
+
+    background-color: #008000;
     color: var(--secondary-neutral-color);
-    border: none;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
-    cursor: pointer;
-  
-}
+    padding: 10px;
 
-button:hover{
-  
-    opacity: .6;
-}
-
-.voltar{
-  
-    background-color: #fff;
-    color: var(--main-color);
-  
 }
 
 /* Responsividade: */
