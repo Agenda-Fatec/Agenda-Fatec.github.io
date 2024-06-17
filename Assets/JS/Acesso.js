@@ -91,7 +91,7 @@ document.getElementById("btn_recuperar_senha").addEventListener("click", () => {
     else
     {
 
-        alert("Seu senha é: " + senha);
+        alert("Seu senha é: " + dados_usuario.senha);
 
     }
 

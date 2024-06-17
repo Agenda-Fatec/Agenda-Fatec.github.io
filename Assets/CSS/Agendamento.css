@@ -4,167 +4,206 @@
 
 /* Estilos: */
 
-main {
+#container main {
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: minmax(auto, 50%) auto;
+    gap: 20px;
+
+}
+
+#container main #equipamentos_sala, #container main #sobre_sala, #container main #agendamento_sala {
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    gap: 20px;
+    text-align: center;
 
 }
 
-.container-data-box{
-  
+#container main #equipamentos_sala {
+
+    grid-column: 1 / span 2;
+
+}
+
+#container main #equipamentos_sala #equipamentos, #container main #sobre_sala #dados_sala, #container main #agendamento_sala #agendamento {
+
+    height: 90%;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-neutral-color);
+    padding: 20px;
+
+}
+
+#container main #equipamentos_sala #equipamentos {
+
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    overflow-x: hidden;
+    overflow-y: auto;
+
+}
+
+#container main #equipamentos_sala #equipamentos span {
+
+    height: auto;
+    width: 300px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--secondary-neutral-color);
+    border: 2px solid var(--primary-neutral-color);
+    color: var(--primary-neutral-color);
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+#container main #equipamentos_sala #equipamentos span p {
+
+    width: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: 5px;
+
+}
+
+#container main #sobre_sala #dados_sala, #container main #agendamento_sala #agendamento {
+
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--secondary-neutral-color);
-    width: 498px; 
-    border-radius: 10px;
-    gap: 10px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
-    margin: 5px 0px 25px 0;
-  
+    overflow: hidden;
+
 }
 
-.container-data{
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
+#container main #sobre_sala #dados_sala {
+
+    gap: 40px;
+
+}
+
+#container main #sobre_sala #dados_sala span {
+
+    background-color: #008000;
+    color: var(--secondary-neutral-color);
     padding: 10px;
-  
+
 }
 
-.data{
-  
+#container main #agendamento_sala #agendamento {
+
+    gap: 20px;
+
+}
+
+#container main #agendamento_sala #agendamento label {
+
+    font-weight: bold;
+
+}
+
+#container main #agendamento_sala #agendamento input {
+
     border: none;
-    width: 130px;
-    height: 35px;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-  
+    outline: 1px solid var(--primary-neutral-color);
+    padding: 5px;
+
 }
 
-/*box equipamentos*/
+#container main #agendamento_sala #agendamento #horario {
 
-.container-equip-box{
-  
+    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    background-color: var(--secondary-neutral-color);
-    height: 150px; 
-    width: 498px;
-    border-radius: 10px;
-    gap: 10px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
-    margin: 5px 0px 25px 0;
-  
-}
-
-.container-equip{
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     align-items: center;
-    gap: 10px;
-    text-transform: uppercase;
-    padding: 10px;
-  
-}
-
-.equip{
-  
-    border: none;
-    width: 130px;
-    height: 35px;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-  
-}
-
-/*box bloco*/
-
-.container-bloco-box{
-  
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    background-color: var(--secondary-neutral-color);
-    width: 498px;
-    border-radius: 10px;
-    gap: 24px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
-    margin: 5px 0px 25px 0;
-  
-}
-
-.container-bloco{
-  
-    display: flex;
-    flex-direction: row;
     justify-content: center;
-    align-items: center;
     gap: 10px;
-    text-transform: uppercase;
-    padding: 10px;
-  
+
 }
 
-.bloco{
-  
-    border: none;
-    width: 130px;
-    height: 35px;
-    padding: 10px;
-    text-transform: uppercase;
-    text-align: center;
-  
-}
+#container main #agendamento_sala #agendamento #botoes {
 
-.button{
-  
     display: flex;
+    align-items: center;
     justify-content: center;
     gap: 20px;
-  
+
 }
 
-button{
-  
-    padding: 12px;
-    width: 100px;
-    font-weight: bold;  
-    background-color: var(--main-color);
-    color: var(--secondary-neutral-color);
-    border: none;
-    border-radius: 8px;
-    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
+#container main #agendamento_sala #agendamento #botoes button {
+
+    background-color: transparent;
+    border: 2px solid var(--primary-neutral-color);
+    border-radius: 50px;
+    font-weight: bolder;
+    color: var(--primary-neutral-color);
+    padding: 10px;
     cursor: pointer;
-  
+    transition: 0.5s;
+
 }
 
-button:hover{
-  
-    opacity: .6;
-}
+#container main #agendamento_sala #agendamento #botoes button:hover {
 
-.voltar{
-  
-    background-color: #fff;
-    color: var(--main-color);
-  
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
+    color: var(--secondary-neutral-color);
+
 }
 
 /* Responsividade: */
 
+@media (min-width: 1024px) {
+
+    #container section h1 {
+
+        align-self: self-start;
+    
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    #container main {
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+    
+    }
+
+    #container main #equipamentos_sala, #container main #sobre_sala, #container main #agendamento_sala {
+
+        width: 100%;
+    
+    }
+
+    #container main #equipamentos_sala {
+
+        height: 500px;
+
+    }
+
+    #container main #sobre_sala, #container main #agendamento_sala {
+
+        height: auto;
+    
+    }
+
+    #container main #equipamentos_sala #equipamentos span {
+
+        width: 100%;
+
+    }
+    
+}
