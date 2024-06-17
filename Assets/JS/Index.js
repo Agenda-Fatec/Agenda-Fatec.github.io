@@ -13,9 +13,17 @@ window.onload = () => {
     if(dados[0] != null && dados[1] != null)
     {
 
-        document.querySelector(".without_access").style.display = "none";
+        document.querySelectorAll(".without_access").forEach(tag => {
 
-        document.querySelector(".with_access").style.display = "flex";
+            tag.style.display = "none";
+
+        })
+
+        document.querySelectorAll(".with_access").forEach(tag => {
+
+            tag.style.display = "flex";
+
+        })
 
     }
 
