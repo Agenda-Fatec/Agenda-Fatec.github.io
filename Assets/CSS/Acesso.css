@@ -124,6 +124,7 @@ body {
 #container main section form input {
 
     min-width: 80%;
+    border: none;
     outline: 1px solid var(--primary-neutral-color);
     font-size: 20px;
     color: var(--primary-neutral-color);
@@ -135,7 +136,6 @@ body {
 
 #container main section form input:focus {
 
-    border: none;
     outline: 1px solid var(--main-color);
     cursor: default;
 

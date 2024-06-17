@@ -11,6 +11,7 @@
         <link rel="stylesheet" type="text/css" href="./Assets/CSS/Agendamento.css">
 
         <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
+        <script defer type="text/javascript" src="./Assets/JS/Agendamento.js">  </script>
 
         <title> Agendamento de Sala - Agenda Fatec </title>
 
@@ -47,7 +48,7 @@
 
                     <div id="equipamentos">
 
-
+                        <!--  -->
 
                     </div>
 
@@ -59,9 +60,9 @@
 
                     <div id="dados_sala">
     
-                        <span> Disponível </span>
+                        <h3> Status: <span> Disponível </span> </h3>
     
-                        <h3> Sala: Laboratório 06 (212). </h3>
+                        <h3> Nome: Laboratório 06 (212). </h3>
     
                     </div>
 
@@ -77,15 +78,22 @@
                         <input name="data_agendamento" id="data_agendamento" type="date" required>
     
                         <label for="horario_inicial_agendamento"> Período de uso da sala: </label>
-                        <div>
+                        <div id="horario">
     
+                            <p> Das: </p>
                             <input name="horario_inicial_agendamento" id="horario_inicial_agendamento" type="time" required>
+
+                            <p> Às: </p>
                             <input name="horario_final_agendamento" id="horario_final_agendamento" type="time" required>
     
                         </div>
     
-                        <button type="reset"> Cancelar </button>
-                        <button type="submit"> Agendar </button>
+                        <div id="botoes">
+
+                            <button type="reset"> Redefinir </button>
+                            <button type="submit"> Agendar </button>
+
+                        </div>
     
                     </form>
 
