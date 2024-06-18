@@ -17,7 +17,9 @@
 #container main figure {
 
     height: 300px;
-    width: 300px;
+    width: 350px;
+    background-color: var(--secondary-neutral-color);
+    border: 2px solid var(--primary-neutral-color);
     border-radius: 15px;
     overflow: hidden;
 
@@ -90,7 +92,7 @@
     #container main figure {
 
         height: 200px;
-        width: 200px;
+        width: 250px;
         min-height: 200px;
         min-width: 200px;
     
