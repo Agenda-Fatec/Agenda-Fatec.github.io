@@ -149,6 +149,7 @@ button{
     color: var(--secondary-neutral-color);
     border: none;
     border-radius: 8px;
+    box-shadow: 2px 2px 8px 1px var(--primary-neutral-color);
     cursor: pointer;
   
 }
@@ -158,15 +159,11 @@ button:hover{
     opacity: .6;
 }
 
-.agendar{
-    box-shadow: 0 0 5px 0 var(--primary-neutral-color);
-}
-
 .voltar{
   
     background-color: #fff;
     color: var(--main-color);
-    box-shadow: 0 0 5px 0 var(--primary-neutral-color);
+  
 }
 
 /* Responsividade: */
