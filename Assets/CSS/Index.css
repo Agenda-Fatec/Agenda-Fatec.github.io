@@ -52,7 +52,7 @@
 
 /* Responsividade: */
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
     #container main article {
 
@@ -67,6 +67,7 @@
     #container main {
 
         flex-direction: column;
+        flex-wrap: nowrap;
 
     }
 
@@ -85,12 +86,6 @@
 }
 
 @media (max-width: 767px) {
-
-    #container main {
-
-        flex-wrap: nowrap;
-    
-    }
 
     #container main figure {
 

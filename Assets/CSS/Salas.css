@@ -37,6 +37,7 @@
 #container main #pesquisa_sala input {
 
     width: 300px;
+    background-color: transparent;
     border: none;
     outline: 1px solid var(--primary-neutral-color);
     font-size: 20px;
@@ -51,6 +52,7 @@
 
     width: 500px;
     max-width: 100%;
+    background-color: transparent;
     border: none;
     outline: 1px solid var(--primary-neutral-color);
     font-size: 20px;
@@ -97,7 +99,7 @@
     height: 200px;
     width: 500px;
     display: grid;
-    grid-template-columns: 45% 45%;
+    grid-template-columns: 70% 20%;
     grid-template-rows: 20% 70%;
     align-items: stretch;
     justify-items: stretch;
