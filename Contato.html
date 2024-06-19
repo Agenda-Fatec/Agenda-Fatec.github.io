@@ -1,69 +1,90 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-    <head>
+<head>
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" type="image/x-icon" href="./Assets/Images/Favicon.png">
+    <link rel="icon" type="image/x-icon" href="./Assets/Images/Favicon.png">
+  
+    <link rel="stylesheet" type="text/css" href="./Assets/CSS/Contato.css">
 
-        <link rel="stylesheet" type="text/css" href="./Assets/CSS/Contato.css">
+    <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
+    <script defer type="text/javascript" src="./Assets/JS/Contato.js"></script>
+  
+    <title> Contato - Agenda Fatec </title>
 
-        <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
+</head>
 
-        <title> Contato - Agenda Fatec </title>
+<body>
 
-    </head>
+    <div id="container">
 
-    <body>
+        <header>
 
-        <div id="container">
+            <h1> Agenda Fatec </h1>
 
-            <header>
+            <nav>
 
-                <h1> Agenda Fatec </h1>
+                <a href="./Index.html"> Home </a>
+                <a href="./Salas.html"> Salas </a>
+                <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                <a href="#" onclick="Control_Menu(false);"> Contato </a>
 
-                <nav>
+            </nav>
 
-                    <a href="./Index.html"> Home </a>
-                    <a href="./Salas.html"> Salas </a>
-                    <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                    <a href="#" onclick="Control_Menu(false);"> Contato </a>
+            <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
 
-                    <a href="./Index.html" style="font-weight: bold;"> Sair </a>
+        </header>
 
-                </nav>
+        <main>
 
-                <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
+            <form id="form" class="form">
+                <h2>Fale com um desenvolvedor:</h2>
+                <div class="form-content">
+                    <label for="username">Seu nome completo:</label>
+                    <input type="text" id="username" />
+                    <a>Aqui vai a mensagem de erro</a>
+                </div>
 
-            </header>
+                <div class="form-content">
+                    <label for="email">Seu e-mail para contato:</label>
+                    <input type="email" id="email" />
+                    <a>Aqui vai a mensagem de erro</a>
+                </div>
 
-            <main>
+                <div class="form-content">
+                    <label for="text">Assunto do e-mail:</label>
+                    <textarea id="assunto"></textarea>
+                    <a>Aqui vai a mensagem de erro</a>
+                </div>
 
-                
+                <button class="btn-enviar" type="submit">Enviar</button>
 
-            </main>
+            </form>
 
-            <div id="menu">
+        </main>
 
-                <button onclick="Control_Menu(false);"> <img src="./Assets/Images/Fechar.png" alt="Fechar"> </button>
+        <div id="menu">
 
-                <nav>
+            <button onclick="Control_Menu(false);"> <img src="./Assets/Images/Fechar.png" alt="Fechar"> </button>
+      
+            <nav>
 
-                    <a href="./Index.html"> Home </a>
-                    <a href="./Salas.html"> Salas </a>
-                    <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                    <a href="#" onclick="Control_Menu(false);"> Contato </a>
+                <a href="./Home.html"> Home </a>
+                <a href="./Salas.html"> Salas </a>
+                <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                <a href="#" onclick="Control_Menu(false);"> Contato </a>
 
-                </nav>
+            </nav>
 
-                <a href="./Index.html" style="font-weight: bold;"> Sair </a>
-    
-            </div>
+            <a href="./Index.html" style="font-weight: bold;"> Sair </a>
 
         </div>
-        
-    </body>
+
+    </div>
+
+</body>
 
 </html>
