@@ -1,162 +1,107 @@
-/* Constantes: */
+/* Recursos: */
 
-:root {
-
-    --main-color: #CA0808;
-    --primary-neutral-color: #000000;
-    --secondary-neutral-color: #FFFFFF;
-
-}
+@import url("./Global.css");
 
 /* Estilos: */
 
-* {
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-
-}
-
-body {
-
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-
-}
-
-#container {
-
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-
-}
-
 #container main {
 
-    height: 100%;
-    width: 100%;
-    position: relative;
     display: flex;
     align-items: center;
-    justify-content: center;
-    overflow-x: hidden;
-    overflow-y: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
 
 }
 
-#container main section {
+#container main figure {
 
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-    transition: 1s;
-
-}
-
-#container main #cadastro {
-
-    transform: translateX(-100%);
-
-}
-
-#container main #login {
-
-    transform: translateX(0%);
-
-}
-
-#container main section form {
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 15px;
+    height: 300px;
+    width: 350px;
     background-color: var(--secondary-neutral-color);
-    border: 2px solid var(--main-color);
+    border: 2px solid var(--primary-neutral-color);
     border-radius: 15px;
+    overflow: hidden;
 
 }
 
-#container main #cadastro form {
+#container main figure img {
 
-    height: 600px;
-    width: 600px;
-
-}
-
-#container main #login form {
-
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 
 }
 
-#container main section form h1 {
+#container main article {
 
-    font-size: 30px;
-    font-weight: bolder;
-    color: var(--main-color);
-    margin-bottom: 20px;
-
-}
-
-#container main section form label {
-
-    font-size: 20px;
-    font-weight: bold;
-    color: var(--primary-neutral-color)
+    font-size: 25px;
+    line-height: 45px;
+    text-align: start;
 
 }
 
-#container main section form input {
+#container main #mapa {
 
-    min-width: 80%;
-    outline: 1px solid var(--primary-neutral-color);
-    font-size: 20px;
-    color: var(--primary-neutral-color);
-    text-align: center;
-    padding: 5px;
-    cursor: pointer;
-
-}
-
-#container main section form input:focus {
-
-    outline: 1px solid var(--main-color);
-    cursor: default;
+    height: 40%;
+    width: 85%;
+    display: block;
+    border: 2px solid var(--primary-neutral-color);
+    border-radius: 15px;
+    overflow: hidden;
 
 }
 
-#container main section form button {
+/* Responsividade: */
 
-    min-width: 80%;
-    background-color: var(--main-color);
-    border: none;
-    border-radius: 50px;
-    font-size: 20px;
-    font-weight: bolder;
-    color: var(--secondary-neutral-color);
-    margin-top: 20px;
-    padding: 10px;
-    cursor: pointer;
+@media (min-width: 1025px) {
 
+    #container main article {
+
+        max-width: 50%;
+
+    }
+    
 }
 
-#container main section form p {
+@media (max-width: 1024px) {
 
-    cursor: pointer;
+    #container main {
 
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    #container main article {
+
+        text-align: center;
+
+    }
+
+    #container main #mapa {
+
+        display: none;
+
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    #container main figure {
+
+        height: 200px;
+        width: 250px;
+        min-height: 200px;
+        min-width: 200px;
+    
+    }
+
+    #container main article {
+
+        font-size: 20px;
+
+    }
+    
 }

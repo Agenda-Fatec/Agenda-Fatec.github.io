@@ -10,6 +10,6 @@
 
 - [x] Adicionar um contato de cada desenvolvedor do site;
  
-- [] Filtrar com base na disponibilidade de horário e equipamentos que a sala possui;
+- [ ] Filtrar com base na disponibilidade de horário e equipamentos que a sala possui;
 
 - [x] Alterar a ordem de opções do menu de navegação.

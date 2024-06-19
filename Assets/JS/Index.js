@@ -1,98 +1,30 @@
-var nome, ra, email, senha = "";
+var dados = [];
 
-var vezes_login = 0;
+window.onload = () => {
 
-function Change_Form(formulario)
-{
+    const url_get = new URLSearchParams(window.location.search);
 
-    switch(formulario)
+    const usuario = url_get.get("ra_login");
+
+    const senha = url_get.get("senha_login")
+
+    dados.push(usuario, senha);
+
+    if(dados[0] != null && dados[1] != null)
     {
 
-        case "cadastro":
+        document.querySelectorAll(".without_access").forEach(tag => {
 
-            document.getElementById("login").style.transform = "translateX(100%)";
+            tag.style.display = "none";
 
-            setTimeout(() => { document.getElementById("cadastro").style.transform = "translateX(0%)"; }, 750);
+        })
 
-        break;
+        document.querySelectorAll(".with_access").forEach(tag => {
 
-        default:
+            tag.style.display = "flex";
 
-            document.getElementById("cadastro").style.transform = "translateX(-100%)";
-
-            setTimeout(() => { document.getElementById("login").style.transform = "translateX(0%)"; }, 750);
-
-        break;
+        })
 
     }
 
 }
-
-document.getElementById("form_cadastro").addEventListener("submit", event => {
-
-    nome = document.getElementById("nome_cadastro").value;
-
-    ra = document.getElementById("ra_cadastro").value;
-
-    email = document.getElementById("email_cadastro").value;
-
-    senha = document.getElementById("senha_cadastro").value;
-
-    event.preventDefault();
-
-    document.getElementById("form_cadastro").reset();
-
-    Change_Form("login");
-
-});
-
-document.getElementById("form_login").addEventListener("submit", event => {
-
-    if(vezes_login >= 3)
-    {
-
-        alert("Número máximo de tentativas atingido!");
-
-        event.preventDefault();
-
-        document.getElementById("form_login").reset();
-
-    }
-
-    else if(document.getElementById("ra_login").value != ra || document.getElementById("senha_login").value != senha)
-    {
-
-        alert("Dados incorretos! Tente novamente.");
-
-        vezes_login++;
-
-        event.preventDefault();
-
-    }
-
-    else
-    {
-
-        return true;
-
-    }
-
-});
-
-document.getElementById("btn_recuperar_senha").addEventListener("click", () => {
-
-    if(senha == "")
-    {
-
-        alert("Você ainda não possui um cadastro.");
-
-    }
-
-    else
-    {
-
-        alert("Seu senha é: " + senha);
-
-    }
-
-});

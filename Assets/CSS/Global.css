@@ -55,12 +55,18 @@ body {
 
 }
 
-#container header nav {
+#container header nav, #container header nav div {
 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 15px;
+
+}
+
+#container header nav .with_access {
+
+    display: none;
 
 }
 
@@ -117,17 +123,23 @@ body {
 
 }
 
-#menu nav {
+#menu nav, #menu nav div {
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 30px;
 
 }
 
-#container header nav a, #menu a {
+#menu .with_access {
+
+    display: none;
+
+}
+
+#container header a, #menu a {
 
     text-decoration: none;
     color: var(--secondary-neutral-color);
@@ -135,7 +147,7 @@ body {
 
 }
 
-#container header nav a:hover, #menu a:hover {
+#container header a:hover, #menu a:hover {
 
     color: var(--primary-neutral-color);
 

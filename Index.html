@@ -10,9 +10,10 @@
 
         <link rel="stylesheet" type="text/css" href="./Assets/CSS/Index.css">
 
+        <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
         <script defer type="text/javascript" src="./Assets/JS/Index.js">  </script>
 
-        <title> Cadastro / Login - Agenda Fatec </title>
+        <title> Tela Inicial - Agenda Fatec </title>
 
     </head>
 
@@ -20,57 +21,85 @@
 
         <div id="container">
 
+            <header>
+
+                <h1> Agenda Fatec </h1>
+
+                <nav>
+
+                    <div class="with_access">
+
+                        <a href="#" onclick="Control_Menu(false);"> Home </a>
+                        <a href="./Salas.html"> Salas </a>
+                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                        <a href="./Contato.html"> Contato </a>
+
+                        <a href="./Index.html" style="font-weight: bold;"> Sair </a>
+
+                    </div>
+
+                    <div class="without_access">
+
+                        <a href="#" onclick="Control_Menu(false);"> Home </a>
+                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                        <a href="./Contato.html"> Contato </a>
+
+                        <a href="./Acesso.html" style="font-weight: bold;"> Entrar </a>
+
+                    </div>
+
+                </nav>
+
+                <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
+
+            </header>
+
             <main>
 
-                <section id="cadastro">
+                <figure> <img src="./Assets/Images/Logotipo.PNG" alt="Logo-Agenda-Fatec"> </figure>
 
-                    <form id="form_cadastro" action="./Index.html" method="get">
+                <article>
+                    
+                    Gerenciar e agendar as salas de aula, da Fatec Jahu, agora ficou mais fácil. Selecione a sala desejada, defina a
+                    data e horário (Início e término.) de utilização, faça a solicitação e aguarde pela resposta. Seja bem-vindo(a)
+                    ao Agenda Fatec!
+                
+                </article>
 
-                        <h1> Cadastro </h1>
-
-                        <label for="nome_cadastro"> Insira seu nome completo: </label>
-                        <input type="text" name="nome_cadastro" id="nome_cadastro" required>
-
-                        <label for="ra_cadastro"> Insira seu RA: </label>
-                        <input type="number" name="ra_cadastro" id="ra_cadastro" required>
-
-                        <label for="email_cadastro"> Insira seu email escolar: </label>
-                        <input type="email" name="email_cadastro" id="email_cadastro" placeholder="Email da Fatec" required>
-
-                        <label for="senha_cadastro"> Crie uma senha: </label>
-                        <input type="password" name="senha_cadastro" id="senha_cadastro" required>
-
-                        <button type="submit"> Criar </button>
-
-                        <p onclick="Change_Form('login')"> Já possui um cadastro? Clique aqui. </p>
-
-                    </form>
-
-                </section>
-
-                <section id="login">
-
-                    <form id="form_login" action="./Home.html" method="get">
-
-                        <h1> Login </h1>
-
-                        <label for="ra_login"> Insira seu RA: </label>
-                        <input type="number" name="ra_login" id="ra_login" required>
-
-                        <label for="senha_login"> Insira sua senha: </label>
-                        <input type="password" name="senha_login" id="senha_login" required>
-
-                        <button type="submit"> Entrar </button>
-
-                        <p onclick="Change_Form('cadastro')"> Não possui um cadastro? Clique aqui. </p>
-
-                        <p id="btn_recuperar_senha"> Esqueceu sua senha? Clique aqui. </p>
-
-                    </form>
-
-                </section>
+                <iframe id="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0382553330046!2d-48.55077262390438!3d-22.314392916970057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7583ac8032c15%3A0xd3db07d9284a5cb2!2sFaculdade%20de%20Tecnologia%20de%20Jahu!5e0!3m2!1spt-BR!2sbr!4v1716416016483!5m2!1spt-BR!2sbr">  </iframe>
 
             </main>
+
+            <div id="menu">
+
+                <button onclick="Control_Menu(false);"> <img src="./Assets/Images/Fechar.png" alt="Fechar"> </button>
+
+                <nav>
+
+                    <div class="with_access">
+
+                        <a href="#" onclick="Control_Menu(false);"> Home </a>
+                        <a href="./Salas.html"> Salas </a>
+                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                        <a href="./Contato.html"> Contato </a>
+
+                    </div>
+
+                    <div class="without_access">
+
+                        <a href="#" onclick="Control_Menu(false);"> Home </a>
+                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                        <a href="./Contato.html"> Contato </a>
+
+                    </div>
+
+                </nav>
+
+                <a class="with_access" href="./Index.html" style="font-weight: bold;"> Sair </a>
+
+                <a class="without_access" href="./Acesso.html" style="font-weight: bold;"> Entrar </a>
+    
+            </div>
 
         </div>
         
