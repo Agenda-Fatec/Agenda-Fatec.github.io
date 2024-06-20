@@ -1,90 +1,96 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
+    <head>
 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="icon" type="image/x-icon" href="./Assets/Images/Favicon.png">
-  
-    <link rel="stylesheet" type="text/css" href="./Assets/CSS/Contato.css">
+        <link rel="icon" type="image/x-icon" href="./Assets/Images/Favicon.png">
+    
+        <link rel="stylesheet" type="text/css" href="./Assets/CSS/Contato.css">
 
-    <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
-    <script defer type="text/javascript" src="./Assets/JS/Contato.js"></script>
-  
-    <title> Contato - Agenda Fatec </title>
+        <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
+        <!-- <script defer type="text/javascript" src="./Assets/JS/Contato.js">  </script> -->
+    
+        <title> Contato - Agenda Fatec </title>
 
-</head>
+    </head>
 
-<body>
+    <body>
 
-    <div id="container">
+        <div id="container">
 
-        <header>
+            <header>
 
-            <h1> Agenda Fatec </h1>
+                <h1> Agenda Fatec </h1>
 
-            <nav>
+                <nav>
 
-                <a href="./Index.html"> Home </a>
-                <a href="./Salas.html"> Salas </a>
-                <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                <a href="#" onclick="Control_Menu(false);"> Contato </a>
+                    <a href="./Index.html"> Home </a>
+                    <a href="./Salas.html"> Salas </a>
+                    <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                    <a href="#" onclick="Control_Menu(false);"> Contato </a>
 
-            </nav>
+                    <a href="./Index.html" style="font-weight: bold;"> Sair </a>
 
-            <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
+                </nav>
 
-        </header>
+                <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
 
-        <main>
+            </header>
 
-            <form id="form" class="form">
-                <h2>Fale com um desenvolvedor:</h2>
-                <div class="form-content">
-                    <label for="username">Seu nome completo:</label>
-                    <input type="text" id="username" />
-                    <a>Aqui vai a mensagem de erro</a>
-                </div>
+            <main>
 
-                <div class="form-content">
-                    <label for="email">Seu e-mail para contato:</label>
-                    <input type="email" id="email" />
-                    <a>Aqui vai a mensagem de erro</a>
-                </div>
+                <section>
 
-                <div class="form-content">
-                    <label for="text">Assunto do e-mail:</label>
-                    <textarea id="assunto"></textarea>
-                    <a>Aqui vai a mensagem de erro</a>
-                </div>
+                    <h1> Contatos da Fatec Jahu </h1>
 
-                <button class="btn-enviar" type="submit">Enviar</button>
+                    <a target="_blank" href="https://fatecjahu.edu.br/contatos/"> Abrir </a>
 
-            </form>
+                </section>
 
-        </main>
+                <form id="form_contato" action="./Index.html" method="get" autocomplete="off">
 
-        <div id="menu">
+                    <h1> Falar com um dos<br/>desenvolvedores do site </h1>
 
-            <button onclick="Control_Menu(false);"> <img src="./Assets/Images/Fechar.png" alt="Fechar"> </button>
-      
-            <nav>
+                    <label for="nome_contato"> Insira seu nome completo: </label>
+                    <input type="text" name="nome_contato" id="nome_contato" value="Teste" required>
 
-                <a href="./Home.html"> Home </a>
-                <a href="./Salas.html"> Salas </a>
-                <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                <a href="#" onclick="Control_Menu(false);"> Contato </a>
+                    <label for="email_contato"> Insira seu email escolar: </label>
+                    <input type="email" name="email_contato" id="email_contato" placeholder="Email da Fatec" value="teste@fatec" required>
 
-            </nav>
+                    <label for="assunto_contato"> Insira o assunto do email: </label>
+                    <input type="text" name="assunto_contato" id="assunto_contato" required>
 
-            <a href="./Index.html" style="font-weight: bold;"> Sair </a>
+                    <label for="detalhes_contato"> Descreva o assunto com mais detalhes: </label>
+                    <textarea name="detalhes_contato" id="detalhes_contato" maxlength="255" required></textarea>
+
+                    <button type="submit"> Enviar </button>
+
+                </form>
+
+            </main>
+
+            <div id="menu">
+
+                <button onclick="Control_Menu(false);"> <img src="./Assets/Images/Fechar.png" alt="Fechar"> </button>
+
+                <nav>
+
+                    <a href="./Index.html"> Home </a>
+                    <a href="./Salas.html"> Salas </a>
+                    <a href="./Desenvolvedores.html"> Desenvolvedores </a>
+                    <a href="#" onclick="Control_Menu(false);"> Contato </a>
+
+                </nav>
+
+                <a href="./Index.html" style="font-weight: bold;"> Sair </a>
+
+            </div>
 
         </div>
 
-    </div>
-
-</body>
+    </body>
 
 </html>

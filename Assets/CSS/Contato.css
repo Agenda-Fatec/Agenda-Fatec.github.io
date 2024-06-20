@@ -3,170 +3,155 @@
 @import url("./Global.css");
 
 /* Estilos: */
-main {
+
+#container main {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+
+}
+
+#container main h1 {
+
+    text-align: center;
+
+}
+
+#container main section, #container main form {
+
+    height: auto;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 15px;
+    background-color: var(--secondary-neutral-color);
+    border: 2px solid var(--main-color);
+    border-radius: 15px;
+    padding: 20px;
+
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid var(--main-color);
-    border-radius: 10px;
-    min-height: 450px;
-    width: 500px;
-}
-.form-content{
-    display: flex;
-    flex-direction: column;
+#container main section {
+
+    width: 300px;
+
 }
 
-h2 {
-    color: var(--main-color);
-    margin: 20px 0 10px 0;
-}
+#container main section h1, #container main form h1 {
 
-label {
-    margin: 20px 0 2px 0;
-    text-align: center;
-}
-
-input {
-    width: 220px;
-    height: 28px;
-}
-
-textarea {
-    width: 340px;
-    height: 130px;
-    resize: none;
-}
-
-.btn-enviar {
-    background-color: var(--main-color);
-    color: white;
-    border: 1px solid black;
-    border-radius: 10px;
-    font-weight: 600;
-    height: 25px;
-    width: 95px;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.contato-fatec {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.contato-fatec p {
-    color: var(--main-color);
+    font-size: 30px;
     font-weight: bolder;
-    margin-top: 20px;
+    color: var(--main-color);
+    margin-bottom: 20px;
+
 }
 
-a {
+#container main section a {
+
+    min-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--main-color);
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--secondary-neutral-color);
     text-decoration: none;
-    color: black;
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+
 }
 
-.form-content a { /*texto da mensagem de erro*/
+#container main form {
+
+    width: 600px;
+
+}
+
+#container main form label {
+
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-neutral-color);
     text-align: center;
-    bottom: -8px;
-    font-size: small;
-    left: 0;
-    visibility: hidden;
-}
-.form-content.error input { /*cor borda do input do erro*/
-    border: var(--main-color) 1px solid;  
-}
-.form-content.error textarea { /*cor borda do textarea*/
-    border: var(--main-color) 1px solid;  
+
 }
 
+#container main form input, #container main form textarea {
 
-.form-content.error a{ /*cor texto input quando ativo*/
-    color: var(--main-color);  
-    visibility: visible;
+    min-width: 80%;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid var(--primary-neutral-color);
+    font-size: 20px;
+    color: var(--primary-neutral-color);
+    padding: 5px;
+    cursor: pointer;
+
 }
 
+#container main form input {
+
+    text-align: center;
+
+}
+
+#container main form textarea {
+
+    min-height: 200px;
+    resize: none;
+    text-align: start;
+
+}
+
+#container main form input:focus, #container main form textarea:focus {
+
+    outline: 1px solid var(--main-color);
+    cursor: default;
+
+}
+
+#container main form button {
+
+    min-width: 80%;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bolder;
+    color: var(--secondary-neutral-color);
+    margin-top: 20px;
+    padding: 10px;
+    cursor: pointer;
+
+}
 
 /* Responsividade: */
-@media(max-width: 1024px) {
-    body {
-        font-size: 1.5rem;
-    }
 
-    h2 {
-        margin-top: 20px;
-    }
-
-    label {
-        margin-bottom: 10px;
-    }
-
-    .btn-enviar {
-        margin-bottom: 10px;
-    }
-
-    textarea {
-        width: 400px;
-        height: 50px;
-        margin-bottom: 5px;
-    }
-
-    input {
-        width: 400px;
-        /* margin-top: 20px; */
-    }
-
-    .fale-container {
-        height: 650px;
-        width: 700px;
-    }
-}
-
-@media(max-width: 720px) {
-    body {
-        font-size: 1.5rem;
-    }
-
-    main {
-        margin-top: 40px;
-        justify-content: center;
-    }
-
-    .fale-container h2 {
-        font-size: 1.7rem;
-        text-align: center;
-    }
-
-    label {
-        margin-bottom: 10px;
-    }
-
-    textarea {
-        width: 80%;
-    }
-
-    input {
-        width: 80%;
-        height: 20px;
-    }
-
-    .fale-container {
-        width: 330px;
-    }
+@media (max-width: 1024px) {
 
     #container main {
-        height: 690px;
+
+        flex-direction: column;
+        justify-content: flex-start;
+    
     }
 
-    .contato-fatec {
-        margin-top: 20px;
+}
+
+@media (max-height: 850px) {
+
+    #container main {
+
+        flex-direction: column;
+        justify-content: flex-start;
+    
     }
+
 }

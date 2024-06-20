@@ -94,4 +94,3 @@ function errorInput(input, message) {
 
     formItem.className = "form-content error"
 }
-
