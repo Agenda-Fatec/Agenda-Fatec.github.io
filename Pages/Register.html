@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Cadastro | Agenda Fatec </title>
+
+        <script defer type="text/javascript" src="../Assets/JS/Global.js">  </script>
+
+        <link rel="stylesheet" type="text/css" href="../Assets/CSS/Access.css">
+
+        <!-- Favicon (Global.js) -->
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <main>
+
+                <div id="form">
+
+                    <form action="#">
+
+                        <figure> <img src="../Assets/Images/Storyset/Register.svg" alt="Cadastro"> </figure>
+
+                        <section id="data">
+
+                            <label for="name"> Digite seu nome completo: </label>
+                            <input type="text" id="name" name="name" maxlength="75" required>
+
+                            <label for="email"> Digite seu e-mail institucional: </label>
+                            <input type="email" id="email" name="email" maxlength="50" required>
+
+                            <label for="position"> Defina sua relação com a instituição de ensino: </label>
+                            <select id="position" name="position" required>
+
+                                <option value="1"> Aluno(a) </option>
+                                <option value="2"> Professor(a) </option>
+                                <option value="3"> Auxiliar de Docente </option>
+                                <option value="4"> Coordenador(a) </option>
+                                <option value="5"> Diretor(a) </option>
+                                <option value="6"> Outra opção </option>
+
+                            </select>
+
+                            <label for="password"> Crie uma senha: </label>
+                            <input type="password" id="password" name="password" maxlength="20" required>
+
+                            <label for="same-password"> Confirme sua senha: </label>
+                            <input type="password" id="same-password" name="same-password" maxlength="20" required>
+
+                            <div id="buttons">
+
+                                <a href="../Index.html"> Cancelar </a>
+                                <button type="reset"> Limpar </button>
+                                <button type="submit"> Cadastrar </button>
+
+                            </div>
+
+                            <a id="register" href="./Login.html"> Já possui um cadastro? Clique aqui. </a>
+
+                        </section>
+
+                    </form>
+
+                </div>
+
+            </main>
+
+        </div>
+        
+    </body>
+
+    <script type="text/javascript">
+
+        document.getElementById("data").querySelector("input").focus();
+
+        document.querySelector("form").onsubmit = function(event) {
+
+            event.preventDefault();
+
+            const form_data = new FormData(event.target);
+
+            if(form_data.get("password") === form_data.get("same-password"))
+            {
+
+                localStorage.clear();
+
+                localStorage.setItem("usuario_agenda_fatec", [form_data.get("email"), form_data.get("password")]);
+
+                window.location.href = "./Login.html";
+
+            }
+
+            else
+            {
+
+                alert("Senhas não correspondentes! Faça as alterações necessárias e tente novamente.");
+
+            }
+
+        }
+
+    </script>
+
+</html>
