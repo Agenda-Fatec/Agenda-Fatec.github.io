@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title> Login | Agenda Fatec </title>
+
+        <script defer type="text/javascript" src="../Assets/JS/Global.js">  </script>
+
+        <link rel="stylesheet" type="text/css" href="../Assets/CSS/Access.css">
+
+        <!-- Favicon (Global.js) -->
+
+    </head>
+
+    <body>
+
+        <div id="container">
+
+            <main>
+
+                <div id="form">
+
+                    <form action="#">
+
+                        <figure> <img src="../Assets/Images/Storyset/Login.svg" alt="Login"> </figure>
+
+                        <section id="data">
+
+                            <label for="email"> Digite seu e-mail institucional: </label>
+                            <input type="email" id="email" name="email" maxlength="50" required>
+
+                            <label for="password"> Digite sua senha do Agenda Fatec: </label>
+                            <input type="password" id="password" name="password" maxlength="20" required>
+
+                            <div id="buttons">
+
+                                <a href="../Index.html"> Cancelar </a>
+                                <button type="reset"> Limpar </button>
+                                <button type="submit"> Entrar </button>
+
+                            </div>
+
+                            <a id="register" href="./Register.html"> Não possui um cadastro? Clique aqui. </a>
+
+                        </section>
+
+                    </form>
+
+                </div>
+
+            </main>
+
+        </div>
+        
+    </body>
+    
+    <script type="text/javascript">
+
+        document.getElementById("data").querySelector("input").focus();
+
+        document.querySelector("form").onsubmit = function(event) {
+
+            event.preventDefault();
+
+            if(localStorage.getItem("usuario_agenda_fatec") !== null)
+            {
+
+                const form_data = new FormData(event.target);
+
+                const user = localStorage.getItem("usuario_agenda_fatec").split(",");
+
+                if(form_data.get("email") === user[0] && form_data.get("password") === user[1])
+                {
+
+                    localStorage.setItem("usuario_agenda_fatec_logado", true);
+
+                    window.location.href = "../Index.html";
+
+                }
+
+                else
+                {
+
+                    alert("Dados inválidos! Certifique-se de que já está cadastrado e tente novamente.");
+
+                }
+
+            }
+
+            else
+            {
+
+                alert("Dados inválidos! Certifique-se de que já está cadastrado e tente novamente.");
+
+            }
+
+        }
+
+    </script>
+
+</html>

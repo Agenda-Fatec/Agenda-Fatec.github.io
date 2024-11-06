@@ -1,110 +1,200 @@
-/* Recursos: */
+/* Resources: */
 
 @import url("./Global.css");
 
-/* Estilos: */
+/* Styles: */
 
-#container main {
+#home, #about, #contact {
 
+    height: auto;
+    width: 100%;
+    min-height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 20px;
+    justify-content: center;
+    gap: 25px;
+    background-color: transparent;
+    padding: 80px 15px 15px 15px;
 
 }
 
-#container main figure {
+#home, #about {
 
-    height: 300px;
-    width: 350px;
-    min-height: 300px;
-    min-width: 350px;
-    background-color: var(--secondary-neutral-color);
-    border: 2px solid var(--primary-neutral-color);
-    border-radius: 15px;
+    flex-direction: row;
+
+}
+
+#contact {
+
+    flex-direction: column-reverse;
+
+}
+
+#home article, #about article, #contact article {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+
+}
+
+#home article, #about article {
+
+    max-width: 50%;
+    align-items: flex-start;
+
+}
+
+#contact article {
+
+    max-width: 100%;
+    align-items: center;
+
+}
+
+#home article .emphasis, #about article .emphasis, #contact article .emphasis {
+
+    color: var(--main-color);
+    font-weight: bold;
+
+}
+
+#home article h2, #home article h1, #home article p
+#about article h2, #about article p {
+
+    max-width: 100%;
+    text-align: left;
+
+}
+
+#contact article h2, #contact article p {
+
+    max-width: 100%;
+    text-align: center;
+
+}
+
+#home article h2, #about article h2, #contact article h2 {
+
+    max-width: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--contrast-color);
+
+}
+
+#home article h1 {
+
+    max-width: 100%;
+    font-size: 75px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: var(--main-color);
+
+}
+
+#home article p, #about article p, #contact article p {
+
+    width: 600px;
+    max-width: 100%;
+    font-size: 22px;
+    line-height: 35px;
+    color: var(--neutral-color);
+
+}
+
+#home figure, #about figure, #contact figure {
+
+    min-height: 450px;
+    min-width: 450px;
+    max-height: 450px;
+    max-width: 450px;
     overflow: hidden;
 
 }
 
-#container main figure img {
+#home figure img, #about figure img, #contact figure img {
 
     height: 100%;
     width: 100%;
     overflow: hidden;
-
-}
-
-#container main article {
-
-    font-size: 25px;
-    line-height: 45px;
-    text-align: start;
-
-}
-
-#container main #mapa {
-
-    height: 40%;
-    width: 85%;
-    min-height: 250px;
-    display: block;
-    border: 2px solid var(--primary-neutral-color);
-    border-radius: 15px;
-    overflow: hidden;
-
-}
-
-/* Responsividade: */
-
-@media (min-width: 1025px) {
-
-    #container main article {
-
-        max-width: 50%;
-
-    }
     
 }
 
-@media (max-width: 1024px) {
+#contact article #links {
 
-    #container main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+}
+
+#contact article #links a {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+#contact article #links a i {
+
+    font-size: 40px;
+    color: var(--contrast-color);
+    transition: 0.5s;
+
+}
+
+#contact article #links a:hover i {
+
+    color: var(--main-color);
+
+}
+
+/* Responsiveness: */
+
+@media (max-width: 1180px) {
+
+    #home {
+
+        flex-direction: column-reverse;
+
+    }
+
+    #about {
 
         flex-direction: column;
-        flex-wrap: nowrap;
 
     }
 
-    #container main article {
+    #home article, #about article {
+
+        max-width: 100%;
+        align-items: center;
+
+    }
+
+    #home article h2, #home article h1, #home article p,
+    #about article h2, #about article p {
 
         text-align: center;
-
-    }
-
-    #container main #mapa {
-
-        display: none;
-
-    }
-    
-}
-
-@media (max-width: 767px) {
-
-    #container main figure {
-
-        height: 200px;
-        width: 250px;
-        min-height: 200px;
-        min-width: 250px;
     
     }
 
-    #container main article {
+    #home figure, #about figure, #contact figure {
 
-        font-size: 20px;
+        min-height: 300px;
+        min-width: 300px;
+        max-height: 300px;
+        max-width: 300px;
 
     }
-    
+
 }
