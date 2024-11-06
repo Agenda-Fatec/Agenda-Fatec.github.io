@@ -6,100 +6,98 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" type="image/x-icon" href="./Assets/Images/Favicon.png">
+        <title> Início | Agenda Fatec </title>
+
+        <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
 
         <link rel="stylesheet" type="text/css" href="./Assets/CSS/Index.css">
 
-        <script defer type="text/javascript" src="./Assets/JS/Global.js">  </script>
-        <script defer type="text/javascript" src="./Assets/JS/Index.js">  </script>
-
-        <title> Tela Inicial - Agenda Fatec </title>
+        <!-- Favicon (Global.js) -->
 
     </head>
 
     <body>
 
+        <!-- Menu (Global.js) -->
+
         <div id="container">
 
-            <header>
-
-                <h1> Agenda Fatec </h1>
-
-                <nav>
-
-                    <div class="with_access">
-
-                        <a href="#" onclick="Control_Menu(false);"> Home </a>
-                        <a href="./Salas.html"> Salas </a>
-                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                        <a href="./Contato.html"> Contato </a>
-
-                        <a href="./Index.html" style="font-weight: bold;"> Sair </a>
-
-                    </div>
-
-                    <div class="without_access">
-
-                        <a href="#" onclick="Control_Menu(false);"> Home </a>
-                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                        <a href="./Contato.html"> Contato </a>
-
-                        <a href="./Acesso.html" style="font-weight: bold;"> Entrar </a>
-
-                    </div>
-
-                </nav>
-
-                <button onclick="Control_Menu(true);"> <img src="./Assets/Images/Menu.png" alt="Menu"> </button>
-
-            </header>
+            <!-- Header (Global.js) -->
 
             <main>
 
-                <figure> <img src="./Assets/Images/Logotipo.png" alt="Logo-Agenda-Fatec"> </figure>
+                <section id="home">
 
-                <article>
-                    
-                    Gerenciar e agendar as salas de aula, da Fatec Jahu, agora ficou mais fácil. Selecione a sala desejada, defina a
-                    data e horário (Início e término.) de utilização, faça a solicitação e aguarde pela resposta. Seja bem-vindo(a)
-                    ao Agenda Fatec!
-                
-                </article>
+                    <article>
+        
+                        <h2> Bem-vindo(a) ao </h2>
+        
+                        <h1> Agenda Fatec </h1>
+            
+                        <p>
+                            
+                            Gerenciar e agendar as salas de aula, da <span class="emphasis">Fatec Jahu</span>, agora ficou mais fácil. Selecione 
+                            a sala desejada, defina a data e horário (Início e término.) de utilização, faça a solicitação e aguarde pela resposta.
+                        
+                        </p>
+        
+                    </article>
+        
+                    <figure> <img src="./Assets/Images/Storyset/Home.svg" alt="Calendário"> </figure>
+        
+                </section>
 
-                <iframe id="mapa" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3691.0382553330046!2d-48.55077262390438!3d-22.314392916970057!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7583ac8032c15%3A0xd3db07d9284a5cb2!2sFaculdade%20de%20Tecnologia%20de%20Jahu!5e0!3m2!1spt-BR!2sbr!4v1716416016483!5m2!1spt-BR!2sbr">  </iframe>
+                <section id="about">
+
+                    <figure> <img src="./Assets/Images/Storyset/About.svg" alt="Estudo"> </figure>
+
+                    <article>
+        
+                        <h2> Sobre o Projeto </h2>
+            
+                        <p>
+                            
+                            A ideia por trás do <span class="emphasis">Agenda Fatec</span>, surgiu a partir de um problema enfrentado pela 
+                            <span class="emphasis">Fatec Jahu</span>, onde, para se requisitar uma sala, é necessário que isso ocorra de forma 
+                            cara a cara. Outro ponto a se destacar, é que os horários dos agendamentos são salvos em folhas de papel, o que gera 
+                            um custo de material que poderia ser descartado, caso o processo fosse feito digitalmente.
+                            <br><br>
+                            A proposta do <span class="emphasis">Agenda Fatec</span> é proporcionar um melhor gerenciamento e agendamento das 
+                            salas da instituição de ensino, garantindo um maior controle e praticidade à <span class="emphasis">Fatec Jahu</span>.
+                        
+                        </p>
+        
+                    </article>
+
+                </section>
+
+                <section id="contact">
+
+                    <article>
+        
+                        <h2> Contato </h2>
+            
+                        <p>
+                            
+                            Veja os conteúdos relacionados ao <span class="emphasis">Agenda Fatec</span> ou contate a 
+                            <span class="emphasis">Fatec Jahu</span>.
+                        
+                        </p>
+
+                        <div id="links">
+
+                            <a target="_blank" href="https://github.com/Agenda-Fatec"> <i class="bx bxl-github">  </i> </a>
+                            <a target="_blank" href="https://fatecjahu.edu.br"> <i class="bx bxs-school">  </i> </a>
+
+                        </div>
+        
+                    </article>
+
+                    <figure> <img src="./Assets/Images/Storyset/Contact.svg" alt="Contatos"> </figure>
+
+                </section>
 
             </main>
-
-            <div id="menu">
-
-                <button onclick="Control_Menu(false);"> <img src="./Assets/Images/Fechar.png" alt="Fechar"> </button>
-
-                <nav>
-
-                    <div class="with_access">
-
-                        <a href="#" onclick="Control_Menu(false);"> Home </a>
-                        <a href="./Salas.html"> Salas </a>
-                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                        <a href="./Contato.html"> Contato </a>
-
-                    </div>
-
-                    <div class="without_access">
-
-                        <a href="#" onclick="Control_Menu(false);"> Home </a>
-                        <a href="./Desenvolvedores.html"> Desenvolvedores </a>
-                        <a href="./Contato.html"> Contato </a>
-
-                    </div>
-
-                </nav>
-
-                <a class="with_access" href="./Index.html" style="font-weight: bold;"> Sair </a>
-
-                <a class="without_access" href="./Acesso.html" style="font-weight: bold;"> Entrar </a>
-    
-            </div>
 
         </div>
         
